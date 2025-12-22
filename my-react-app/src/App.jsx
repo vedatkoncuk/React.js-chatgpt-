@@ -1,22 +1,20 @@
-import UserCard from "./components/UserCard"
-import { userEffect, useState } from "react"
-
+import { useEffect, useState } from "react";
+import UserCard from "./components/UserCard.jsx";
 
 function App() {
-  
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([]);
 
-  userEffect(() => {
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
-    .then((response) => response.json())
-    .then((data) => setUsers(data))
-  },[])
+      .then((response) => response.json())
+      .then((data) => setUsers(data));
+  }, []);
 
   return (
-    <>
+    <div>
       <h1>User List (API)</h1>
 
-      {userEffect.map((user) => (
+      {users.map((user) => (
         <UserCard
           key={user.id}
           name={user.name}
@@ -24,8 +22,8 @@ function App() {
           city={user.address.city}
         />
       ))}
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
