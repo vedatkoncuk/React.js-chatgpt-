@@ -16,6 +16,18 @@ function App() {
         age={21}
         job="Computer Engineering Student"
       />
+
+      <UserCard
+        name="Mehmet"
+        age={30}
+        job="Frontend Developer"
+      />
+
+      <UserCard
+        name="Ayşe"
+        age={28}
+        job="UI Designer"
+      />
     </div>
   )
 }
