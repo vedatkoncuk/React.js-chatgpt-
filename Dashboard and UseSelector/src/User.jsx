@@ -10,7 +10,7 @@ function User() {
   const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = (newName) => {
 
   };
 }
