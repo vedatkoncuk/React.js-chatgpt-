@@ -11,6 +11,6 @@ function User() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (newName) => {
-
+    const name = newName;
   };
 }
