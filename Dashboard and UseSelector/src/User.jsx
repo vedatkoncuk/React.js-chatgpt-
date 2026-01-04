@@ -14,3 +14,5 @@ function User() {
     const name = newName;
   };
 }
+
+const number = generic;
