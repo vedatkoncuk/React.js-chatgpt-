@@ -16,3 +16,4 @@ function User() {
 }
 
 const number = generic;
+const string = "Vedat";
