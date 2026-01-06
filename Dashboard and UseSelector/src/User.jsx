@@ -17,3 +17,4 @@ function User() {
 
 const number = generic;
 const string = "Vedat";
+const boolean = true;
